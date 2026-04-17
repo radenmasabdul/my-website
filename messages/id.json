@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "home": "Abdul.Dev",
+    "about": "Tentang Saya",
+    "project": "Proyek Saya",
+    "experience": "Pengalaman Saya",
+    "sign": "SebarisKode",
+    "contact": "Hubungi Saya"
+  },
+  "content": {
+    "title": "Halo,",
+    "name": "Saya Abdul Rahman Alhafizh",
+    "description": "Saya adalah Frontend Web Developer dengan pengalaman lebih dari 2 tahun dalam membangun antarmuka pengguna yang responsif dan interaktif. Saya berusaha menciptakan aplikasi web yang imersif dan indah melalui kode yang dirancang dengan baik serta desain yang berfokus pada pengguna.",
+    "button": {
+      "view": "Lihat Proyek Saya",
+      "download": "Unduh CV"
+    }
+  }
+}

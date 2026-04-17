@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "home": "Abdul.Dev",
+    "about": "About Me",
+    "project": "My Project",
+    "experience": "My Experience",
+    "sign": "SebarisKode",
+    "contact": "Contact Me"
+  },
+  "content": {
+    "title": "Hello,",
+    "name": "I'm Abdul Rahman Alhafizh",
+    "description": "I'm a Frontend Web Developer with 2+ years of experience building responsive and interactive User Interface.  I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.",
+    "button": {
+      "view": "See My Project",
+      "download": "Download CV"
+    }
+  }
+}
