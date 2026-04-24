@@ -1,22 +1,20 @@
 import Navbar from "@/components/layout/Navbar";
-import { useTranslations } from "next-intl";
+import HeroSection from "@/components/layout/HeroSection";
+import AboutSection from "@/components/layout/AboutSection";
 
 export default function Home() {
-  const t = useTranslations("content");
   
   return (
     <>
       <Navbar />
 
-      <main className="p-8 space-y-4">
-        <h1 className="text-4xl font-bold text-red-500">
-          {t("title")}
-        </h1>
+      <section id="home">
+        <HeroSection />
+      </section>
 
-        <p className="text-lg text-gray-700 max-w-2xl leading-relaxed">
-          {t("description")}
-        </p>
-      </main>
+      <section id="about">
+        <AboutSection />
+      </section>
     </>
   )
 }

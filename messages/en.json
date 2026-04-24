@@ -10,7 +10,11 @@
   "content": {
     "title": "Hello,",
     "name": "I'm Abdul Rahman Alhafizh",
-    "description": "I'm a Frontend Web Developer with 2+ years of experience building responsive and interactive User Interface.  I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design.",
+    "description": {
+      "paragraph-1" : "I'm a Frontend Web Developer with 2+ years of experience building responsive",
+      "paragraph-2" : "and interactive User Interface.  I strives to build immersive and beautiful web",
+      "paragraph-3" : "applications through carefully crafted code and user-centric design."
+    },
     "button": {
       "view": "See My Project",
       "download": "Download CV"

@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from 'next/image';
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
@@ -23,6 +24,7 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [activeSection, setActiveSection] = useState<string>("home");
 
   const switchLocale = (next: string) => {
     router.replace(pathname, { locale: next });
@@ -41,6 +43,26 @@ export default function Navbar() {
     { id: "sign", key: "sign" },
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if(entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    menuItems.forEach((item) => {
+      const el = document.getElementById(item.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [])
+
   return (
     <header className="bg-white dark:bg-black w-full sticky top-0 z-50">
       <div className="w-full px-4 md:px-6 lg:px-10 py-4 flex items-center justify-between gap-2">
@@ -54,7 +76,12 @@ export default function Navbar() {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="font-jakarta text-sm font-medium text-black dark:text-white hover:text-purple-500 dark:hover:text-purple-500 transition whitespace-nowrap"
+              className={`font-jakarta text-sm font-medium transition whitespace-nowrap cursor-pointer
+                ${activeSection === item.id
+                  ? "text-purple-500"
+                  : "text-black dark:text-white hover:text-purple-500 dark:hover:text-purple-500"
+                }`
+              }
             >
               {t(item.key)}
             </button>
@@ -108,7 +135,12 @@ export default function Navbar() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-left text-sm font-medium text-black dark:text-white hover:text-purple-500 dark:hover:text-purple-400 transition py-2 px-2 rounded-md"
+                className={`font-jakarta text-sm font-medium transition whitespace-nowrap cursor-pointer
+                  ${activeSection === item.id
+                    ? "text-purple-500"
+                    : "text-black dark:text-white hover:text-purple-500 dark:hover:text-purple-500"
+                  }`
+                }
               >
                 {t(item.key)}
               </button>
