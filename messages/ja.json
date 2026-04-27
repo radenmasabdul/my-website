@@ -19,5 +19,41 @@
       "view": "プロジェクトを見る",
       "download": "履歴書をダウンロード"
     }
+  },
+  "about": {
+    "title": "私について",
+    "header": "私自身とスキルについての簡単な紹介",
+    "description": {
+      "paragraph-1": "私は、モダンでレスポンシブかつインタラクティブなWebアプリケーション開発に2年以上の経験を持つフロントエンドWeb開発者です。UI開発とパフォーマンス最適化を得意としています。",
+      "paragraph-2": "スケーラブルなUIコンポーネントの開発、ユーザー体験の向上、そしてバックエンドシステムとの円滑な連携を専門としています。",
+      "paragraph-3": "これまでに、React.js、Vue.js、Svelte.js、TypeScript、Tailwind CSSなどのモダンなJavaScript技術を活用し、バックエンドチームやQAチームと密に連携してきました。",
+      "paragraph-4": "以前は、医療、保険、エンタープライズシステム分野の複数プロジェクトに携わり、ダッシュボード開発、システム性能改善、UIの一貫性向上による使いやすさ改善に貢献しました。",
+      "paragraph-5": "仕事以外では、新しい技術の探求、小規模プロジェクトの開発、そしてより良いデジタル体験を生み出すための継続的なスキル向上を楽しんでいます。"
+    },
+    "skill": {
+      "title": "スキル",
+      "description": {
+        "stack": {
+          "title": {
+            "frontend": {
+              "name": "Frontend",
+              "technologies": "React.js, Vue.js, Next.js, Javascript, Typescript"
+            },
+            "backend": {
+              "name": "Backend",
+              "technologies": "Node.js, Express.js"
+            },
+            "database": {
+              "name": "Database",
+              "technologies": "MySQL, PostgreSQL"
+            },
+            "testing": {
+              "name": "Unit Testing",
+              "technologies": "Jest"
+            }
+          }
+        }
+      }
+    }
   }
 }

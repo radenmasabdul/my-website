@@ -19,5 +19,41 @@
       "view": "Lihat Proyek Saya",
       "download": "Unduh CV"
     }
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "header": "Perkenalan singkat tentang saya dan keahlian saya",
+    "description": {
+      "paragraph-1": "Saya adalah Frontend Web Developer dengan pengalaman lebih dari 2 tahun dalam membangun aplikasi web modern, responsif, dan interaktif, dengan fokus kuat pada pengembangan antarmuka pengguna serta optimasi performa.",
+      "paragraph-2": "Saya memiliki keahlian dalam mengembangkan komponen UI yang scalable, meningkatkan pengalaman pengguna, dan memastikan integrasi yang lancar dengan sistem backend.",
+      "paragraph-3": "Sepanjang karier saya, saya telah bekerja menggunakan teknologi JavaScript modern seperti React.js, Vue.js, Svelte.js, TypeScript, dan Tailwind CSS, serta berkolaborasi erat dengan tim backend dan QA.",
+      "paragraph-4": "Sebelumnya, saya mengerjakan berbagai proyek di bidang kesehatan, asuransi, dan sistem enterprise, dengan kontribusi dalam membangun dashboard, meningkatkan performa sistem, dan menyempurnakan konsistensi UI agar lebih mudah digunakan.",
+      "paragraph-5": "Di luar pekerjaan, saya senang mengeksplorasi teknologi baru, membangun proyek kecil, dan terus meningkatkan kemampuan untuk menciptakan pengalaman digital yang lebih baik dan berdampak."
+    },
+    "skill": {
+      "title": "Keahlian Saya",
+      "description": {
+        "stack": {
+          "title": {
+            "frontend": {
+              "name": "Frontend",
+              "technologies": "React.js, Vue.js, Next.js, Javascript, Typescript"
+            },
+            "backend": {
+              "name": "Backend",
+              "technologies": "Node.js, Express.js"
+            },
+            "database": {
+              "name": "Database",
+              "technologies": "MySQL, PostgreSQL"
+            },
+            "testing": {
+              "name": "Unit Testing",
+              "technologies": "Jest"
+            }
+          }
+        }
+      }
+    }
   }
 }
