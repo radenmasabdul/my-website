@@ -78,8 +78,8 @@ export default function Navbar() {
               onClick={() => scrollToSection(item.id)}
               className={`font-jakarta text-sm font-medium transition whitespace-nowrap cursor-pointer
                 ${activeSection === item.id
-                  ? "text-purple-500"
-                  : "text-black dark:text-white hover:text-purple-500 dark:hover:text-purple-500"
+                  ? "text-purple-600"
+                  : "text-black dark:text-white hover:text-purple-600 dark:hover:text-purple-600"
                 }`
               }
             >
@@ -112,7 +112,7 @@ export default function Navbar() {
 
           <Button
             onClick={() => window.open("https://wa.me/628988416727","_blank")}
-            className="hidden lg:flex rounded-sm bg-purple-500 hover:opacity-80 p-5 text-sm transition whitespace-nowrap"
+            className="hidden lg:flex rounded-sm bg-purple-600 hover:opacity-80 p-5 text-sm transition whitespace-nowrap"
           >
             <Phone size={15} className="text-white"/>
             <span className="font-jakarta font-bold text-sm text-white"> {t("contact")}</span>
@@ -148,7 +148,7 @@ export default function Navbar() {
 
             <Button
               onClick={() => window.open("https://wa.me/628988416727","_blank")}
-              className="mt-3 w-full justify-center rounded-sm bg-purple-500 dark:bg-purple-400 text-white dark:text-black hover:opacity-80"
+              className="mt-3 w-full justify-center rounded-sm bg-purple-600 dark:bg-purple-600 text-white dark:text-black hover:opacity-80"
             >
               <Phone size={15} />
               <span className="font-jakarta font-bold text-sm ml-2">{t("contact")}</span>

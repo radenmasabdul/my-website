@@ -7,14 +7,15 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <main>
+        <section id="home">
+          <HeroSection />
+        </section>
 
-      <section id="home">
-        <HeroSection />
-      </section>
-
-      <section id="about">
-        <AboutSection />
-      </section>
+        <section id="about">
+          <AboutSection />
+        </section>
+      </main>
     </>
   )
 }

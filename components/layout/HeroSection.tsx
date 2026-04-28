@@ -66,15 +66,15 @@ export default function HeroSection() {
         </div>
 
         <div className="flex flex-row gap-3 py-5 lg:py-10">
-          <Button className="rounded-none py-5 bg-purple-500 hover:opacity-80 px-5 transition cursor-pointer">
+          <Button className="rounded-none py-5 bg-purple-600 hover:opacity-80 px-5 transition cursor-pointer">
             <span className="font-sans font-semibold text-xs md:text-sm lg:text-base text-white">
               {t("button.view")}
             </span>
           </Button>
 
           <Button variant="outline" type="button" className={downloadClass} onClick={downloadCV}>
-            <Download size={15} className="text-purple-500 dark:text-white"/>
-            <span className="font-sans font-semibold text-xs md:text-sm lg:text-base text-purple-500 dark:text-white">
+            <Download size={15} className="text-purple-600 dark:text-white"/>
+            <span className="font-sans font-semibold text-xs md:text-sm lg:text-base text-purple-600 dark:text-white">
               {t("button.download")}
             </span>
           </Button>
@@ -87,6 +87,7 @@ export default function HeroSection() {
             src={ProfileImage}
             alt="profile-image"
             loading="eager"
+            fetchPriority="high"
             fill
             sizes="(max-width: 768px) 224px, (max-width: 1024px) 288px, 384px"
             className="object-cover"
