@@ -10,7 +10,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Button } from "../ui/button";
 import LogoBlack from "@/public/images/logo-black.png";
 import LogoWhite from "@/public/images/logo-white.png";
-import SwitchMode from "./SwitchMode";
+import SwitchMode from "../features/theme/SwitchMode";
 
 const localeLabels: Record<string, string> = {
   en: "English",
@@ -61,14 +61,26 @@ export default function Navbar() {
     });
 
     return () => observer.disconnect();
-  }, [])
+  }, []);
 
   return (
     <header className="bg-white dark:bg-black w-full sticky top-0 z-50">
       <div className="w-full px-4 md:px-6 lg:px-10 py-4 flex items-center justify-between gap-2">
         <div className="shrink-0">
-          <Image src={LogoBlack} alt="logo" className="h-7 md:h-8 lg:h-9 w-auto dark:hidden" />
-          <Image src={LogoWhite} alt="logo" className="h-7 md:h-8 lg:h-9 w-auto hidden dark:block" />
+          <Image
+            src={LogoBlack}
+            alt="logo"
+            className="h-7 md:h-8 lg:h-9 w-auto dark:hidden"
+            sizes="(max-width: 768px) 110px, (max-width: 1024px) 125px, 131px"
+            priority
+          />
+          <Image
+            src={LogoWhite}
+            alt="logo"
+            className="h-7 md:h-8 lg:h-9 w-auto hidden dark:block"
+            sizes="(max-width: 768px) 110px, (max-width: 1024px) 125px, 131px"
+            priority
+          />
         </div>
 
         <nav className="hidden lg:flex items-center gap-6 text-sm font-sans flex-1 justify-center">
@@ -77,11 +89,11 @@ export default function Navbar() {
               key={item.id}
               onClick={() => scrollToSection(item.id)}
               className={`font-jakarta text-sm font-medium transition whitespace-nowrap cursor-pointer
-                ${activeSection === item.id
-                  ? "text-purple-600"
-                  : "text-black dark:text-white hover:text-purple-600 dark:hover:text-purple-600"
-                }`
-              }
+                ${
+                  activeSection === item.id
+                    ? "text-purple-600"
+                    : "text-black dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
+                }`}
             >
               {t(item.key)}
             </button>
@@ -91,10 +103,14 @@ export default function Navbar() {
         <div className="flex items-center gap-1 md:gap-4 lg:gap-4 shrink-0">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="flex items-center gap-2 px-2 h-9">
+              <Button
+                variant="ghost"
+                className="flex items-center gap-2 px-2 h-9"
+              >
                 <Globe size={15} className="text-black dark:text-white" />
                 <span className="font-jakarta text-sm font-normal text-black dark:text-white">
-                  {locale.charAt(0).toUpperCase() + locale.slice(1).toLowerCase()}
+                  {locale.charAt(0).toUpperCase() +
+                    locale.slice(1).toLowerCase()}
                 </span>
                 <ChevronDown size={13} className="text-black dark:text-white" />
               </Button>
@@ -111,11 +127,14 @@ export default function Navbar() {
           <SwitchMode />
 
           <Button
-            onClick={() => window.open("https://wa.me/628988416727","_blank")}
+            onClick={() => window.open("https://wa.me/628988416727", "_blank")}
             className="hidden lg:flex rounded-sm bg-purple-600 hover:opacity-80 p-5 text-sm transition whitespace-nowrap"
           >
-            <Phone size={15} className="text-white"/>
-            <span className="font-jakarta font-bold text-sm text-white"> {t("contact")}</span>
+            <Phone size={15} className="text-white" />
+            <span className="font-jakarta font-bold text-sm text-white">
+              {" "}
+              {t("contact")}
+            </span>
           </Button>
 
           <Button
@@ -136,22 +155,26 @@ export default function Navbar() {
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`font-jakarta text-sm font-medium transition whitespace-nowrap cursor-pointer
-                  ${activeSection === item.id
-                    ? "text-purple-500"
-                    : "text-black dark:text-white hover:text-purple-500 dark:hover:text-purple-500"
-                  }`
-                }
+                  ${
+                    activeSection === item.id
+                      ? "text-purple-500"
+                      : "text-black dark:text-white hover:text-purple-500 dark:hover:text-purple-500"
+                  }`}
               >
                 {t(item.key)}
               </button>
             ))}
 
             <Button
-              onClick={() => window.open("https://wa.me/628988416727","_blank")}
+              onClick={() =>
+                window.open("https://wa.me/628988416727", "_blank")
+              }
               className="mt-3 w-full justify-center rounded-sm bg-purple-600 dark:bg-purple-600 text-white dark:text-black hover:opacity-80"
             >
               <Phone size={15} />
-              <span className="font-jakarta font-bold text-sm ml-2">{t("contact")}</span>
+              <span className="font-jakarta font-bold text-sm ml-2">
+                {t("contact")}
+              </span>
             </Button>
           </div>
         </div>

@@ -1,12 +1,10 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import ProfileImage from "@/public/images/profile.webp";
 import { Button } from "../ui/button";
-import { ChevronDown, Download } from "lucide-react";
-
+import Download from "../features/Download";
+import ScrollDown from "../features/ScrollDown";
 import iconGithub from "@/public/icons/icon-github.svg";
 import iconInstagram from "@/public/icons/icon-instagram.svg";
 import iconLinkedIn from "@/public/icons/icon-linkedin.svg";
@@ -17,17 +15,6 @@ import iconTiktok from "@/public/icons/icon-tiktok.svg";
 export default function HeroSection() {
   const t = useTranslations("content");
   
-  const downloadCV = () => {
-    const link = document.createElement('a');
-
-    link.href = `${window.location.origin}/files/CV_ABDUL_RAHMAN_ALHAFIZH.pdf`;
-    link.download = "CV_ABDUL_RAHMAN_ALHAFIZH.pdf";
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const sectionClass = `hero-bg relative w-full min-h-[calc(100vh-64px)] flex flex-col-reverse md:flex-row items-center 
     p-4 md:px-10 md:py-8 lg:px-24 lg:py-20 gap-4 md:gap-8 lg:gap-16`;
 
@@ -37,16 +24,9 @@ export default function HeroSection() {
   const descClass = `space-y-1 text-sm md:text-base lg:text-xl font-jakarta font-medium
     text-gray-700 dark:text-white`;
 
-  const downloadClass = `rounded-none py-5 border-purple-500 dark:border-purple-500 text-purple-500
-    hover:bg-teal-50 dark:hover:bg-teal-950 px-5 transition cursor-pointer`;
-
   const socialbarClass = `absolute left-1/2 -translate-x-1/2 flex flex-row items-center justify-around
     bg-white dark:bg-[linear-gradient(135deg,#130428_0%,#251043_25%,#38126D_50%,#261045_75%,#190634_100%)]
     px-4 py-4 gap-3 md:gap-4 w-full rounded-sm`;
-
-  const chevronClass = `w-10 h-10 rounded-full flex items-center justify-center shadow-lg border-purple-500
-    bg-white dark:bg-[linear-gradient(135deg,#130428_0%,#251043_25%,#38126D_50%,#261045_75%,#190634_100%)]
-    hover:bg-purple-500 group transition cursor-pointer`
 
   return (
     <section className={sectionClass}>
@@ -72,12 +52,7 @@ export default function HeroSection() {
             </span>
           </Button>
 
-          <Button variant="outline" type="button" className={downloadClass} onClick={downloadCV}>
-            <Download size={15} className="text-purple-600 dark:text-white"/>
-            <span className="font-sans font-semibold text-xs md:text-sm lg:text-base text-purple-600 dark:text-white">
-              {t("button.download")}
-            </span>
-          </Button>
+          <Download label={t("button.download")} />
         </div>
       </div>
 
@@ -115,17 +90,7 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-
-      <div className="absolute bottom-3 md:bottom-40 lg:bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1">
-        <Button
-          variant="outline"
-          onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-          className={chevronClass}
-          aria-label="Scroll down"
-        >
-          <ChevronDown size={20} className="text-black dark:text-white group-hover:text-white transition" />
-        </Button>
-      </div>
+      <ScrollDown />
     </section>
   );
 }
