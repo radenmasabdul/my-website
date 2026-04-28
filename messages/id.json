@@ -55,5 +55,78 @@
         }
       }
     }
+  },
+  "projects": {
+    "title": "Proyek Saya",
+    "header": "Kumpulan proyek yang pernah saya kerjakan, menampilkan keahlian dan pengalaman saya.",
+    "app": {
+      "main": {
+        "working": {
+          "first": {
+            "name": "Zihub",
+            "description": "ZiHub adalah platform dashboard kesehatan terpusat yang dikembangkan untuk membantu rumah sakit dan institusi medis dalam memantau data, layanan, serta performa operasional. Platform ini menyediakan visualisasi data yang jelas, pelacakan KPI, dan pengelolaan data yang terintegrasi untuk membantu tenaga medis mengambil keputusan lebih cepat dan tepat."
+          },
+          "second": {
+            "name": "Zikesmas",
+            "description": "ZiKesmas adalah sistem informasi kesehatan terintegrasi yang dirancang untuk Puskesmas guna mempermudah operasional harian seperti pendaftaran pasien, rekam medis, dan pengelolaan laporan. Sistem ini berfokus pada peningkatan efisiensi, akurasi, dan aksesibilitas layanan kesehatan."
+          },
+          "third": {
+            "name": "ESPPA",
+            "description": "Mengembangkan aplikasi yang mendukung SPPA, Polis, Klaim, Penagihan, dan Pembayaran dalam ekosistem SME."
+          },
+          "fourth": {
+            "name": "Ruang Data",
+            "description": "Terlibat dalam pengembangan awal serta pembaruan berkelanjutan aplikasi web Ruang Data."
+          },
+          "fifth": {
+            "name": "Easy Claim",
+            "description": "Meningkatkan platform web KBM Claim."
+          },
+          "sixth": {
+            "name": "Easy Health",
+            "description": "Meningkatkan platform web Health."
+          }
+        },
+        "portofolio": {
+          "first": {
+            "name": "Nexora App - Dashboard Internal Cerdas untuk Tim Modern",
+            "description": "Nexora App adalah dashboard frontend modern, responsif, dan intuitif yang dirancang untuk memberikan pengalaman pengguna yang lancar bagi tim internal. Berfokus pada desain bersih, interaksi real-time, dan alur kerja efisien untuk membantu organisasi mengelola operasional dengan cepat dan jelas."
+          },
+          "second": {
+            "name": "Nexora API - Dashboard Internal Cerdas untuk Tim Modern",
+            "description": "Nexora API adalah backend REST yang cepat, scalable, dan aman untuk mendukung dashboard internal modern. Dibangun dengan fokus pada performa, keamanan, dan integrasi yang mulus untuk kebutuhan tim dan aplikasi skala besar."
+          },
+          "third": {
+            "name": "Hadipurwanto Law Office",
+            "description": "Proyek ini merupakan redesign modern dan responsif dari website Hadipurwanto Law Office. Berfokus pada tampilan profesional, animasi halus, dan pengalaman pengguna yang lebih baik di semua perangkat."
+          },
+          "fourth": {
+            "name": "Birthday App",
+            "description": "Website ini didedikasikan untuk ulang tahun pacar saya."
+          },
+          "fifth": {
+            "name": "Pokédex App",
+            "description": "Pokédex App adalah aplikasi web interaktif yang memungkinkan pengguna menjelajahi berbagai Pokémon dengan informasi detail seperti kemampuan, tipe, statistik, dan evolusi. Dibangun dengan antarmuka modern dan responsif untuk pengalaman menyenangkan di berbagai perangkat."
+          }
+        }
+      }
+    },
+    "button": {
+      "project": "Lihat Proyek"
+    }
+  },
+  "experience": {
+    "title": "Pengalaman Saya",
+    "header": "Ringkasan singkat perjalanan profesional saya",
+    "button": {
+      "download": "Unduh CV"
+    }
+  },
+  "sc": {
+    "description": "memberikan tutorial coding singkat dan mudah dipahami yang membantu kamu mempelajari dasar-dasar frontend development mulai dari HTML, CSS, hingga JavaScript. Baik kamu ingin membuat website pertamamu atau memahami cara kerja website, setiap video singkat menjelaskan konsep rumit menjadi langkah sederhana yang mudah diikuti. Cocok untuk pelajar, pembelajar mandiri, atau siapa saja yang penasaran dengan dunia teknologi. Channel ini membuktikan bahwa belajar coding tidak harus sulit atau membosankan. Dengan satu baris kode setiap kali, kamu akan perlahan menguasai cara membuat website yang indah dan responsif. Ikuti sekarang dan mulai perjalananmu menjadi frontend developer, satu baris kode demi satu baris kode!"
+  },
+  "footer": {
+    "title": "Mari Terhubung!",
+    "description": "Saya selalu antusias untuk berkolaborasi dan mengeksplorasi ide baru. Hubungi saya melalui email atau platform sosial di bawah ini!"
   }
 }
