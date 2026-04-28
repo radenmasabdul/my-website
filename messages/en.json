@@ -1,0 +1,132 @@
+{
+  "navbar": {
+    "home": "Abdul.Dev",
+    "about": "About Me",
+    "project": "My Project",
+    "experience": "My Experience",
+    "sign": "SebarisKode",
+    "contact": "Contact Me"
+  },
+  "content": {
+    "title": "Hello,",
+    "name": "I'm Abdul Rahman Alhafizh",
+    "description": {
+      "paragraph-1": "I'm a Frontend Web Developer with 2+ years of experience building responsive",
+      "paragraph-2": "and interactive User Interface.  I strives to build immersive and beautiful web",
+      "paragraph-3": "applications through carefully crafted code and user-centric design."
+    },
+    "button": {
+      "view": "See My Project",
+      "download": "Download CV"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "header": "Short introduction about me and my skill",
+    "description": {
+      "paragraph-1": "I'm a Frontend Web Developer with 2+ years of experience building modern, responsive, and interactive web applications, with a strong focus on user interface development and performance optimization.",
+      "paragraph-2": "I specialize in developing scalable UI components, improving user experience, and ensuring smooth integration with backend systems",
+      "paragraph-3": "Throughout my career, I have worked with modern JavaScript technologies including React.js, Vue.js, Svelte.js, TypeScript, and Tailwind CSS, as well as collaborating closely with backend and QA teams.",
+      "paragraph-4": "Previously, I worked on multiple projects in healthcare, insurance, and enterprise systems, where I contributed to building dashboards, improving system performance, and enhancing UI consistency for better usability.",
+      "paragraph-5": "Outside of work, I enjoy exploring new technologies, building small projects, and continuously improving my skills to create better and more impactful digital experiences."
+    },
+    "skill": {
+      "title": "My Skill",
+      "description": {
+        "stack": {
+          "title": {
+            "frontend": {
+              "name": "Frontend",
+              "technologies": "React.js, Vue.js, Next.js, Javascript, Typescript"
+            },
+            "backend": {
+              "name": "Backend",
+              "technologies": "Node.js, Express.js"
+            },
+            "database": {
+              "name": "Database",
+              "technologies": "MySQL, PostgreSQL"
+            },
+            "testing": {
+              "name": "Unit Testing",
+              "technologies": "Jest"
+            }
+          }
+        }
+      }
+    }
+  },
+  "projects": {
+    "title": "My Project's",
+    "header": "A collection of projects I've worked on, highlighting my skills and experience.",
+    "app": {
+      "main": {
+        "working": {
+          "first": {
+            "name": "Zihub",
+            "description": "ZiHub is a centralized healthcare dashboard platform developed to support hospitals and medical institutions in monitoring data, services, and operational performance. It provides clear visual insights, KPI tracking, and seamless data management to help medical staff make faster and better decisions."
+          },
+          "second": {
+            "name": "Zikesmas",
+            "description": "ZiKesmas is an integrated health information system designed for Puskesmas to simplify daily operations such as patient registration, medical records, and report management. It focuses on improving efficiency, accuracy, and accessibility for healthcare services."
+          },
+          "third": {
+            "name": "ESPPA",
+            "description": "Developed an application supporting SPPA, Policy, Claims, Invoicing, and Payment in the SME ecosystem."
+          },
+          "fourth": {
+            "name": "Ruang Data",
+            "description": "Involved in the initial development and ongoing updates of the Ruang Data Web application."
+          },
+          "fifth": {
+            "name": "Easy Claim",
+            "description": "Enhancing the KBM Claim Web platform."
+          },
+          "sixth": {
+            "name": "Easy Health",
+            "description": "Enhancing the Health Web platform."
+          }
+        },
+        "portofolio": {
+          "first": {
+            "name": "Nexora App - Smart Internal Dashboard for Modern Teams",
+            "description": "Nexora App is a modern, responsive, and intuitive frontend dashboard built to deliver a seamless user experience for internal teams. It focuses on clean design, real-time interaction, and efficient workflows to help organizations manage operations with speed and clarity."
+          },
+          "second": {
+            "name": "Nexora API - Smart Internal Dashboard for Modern Teams",
+            "description": "Nexora API is a fast, scalable, and secure REST backend designed to power modern internal dashboards with ease. It prioritizes performance, security, and seamless integration to support the needs of teams and large-scale applications."
+          },
+          "third": {
+            "name": "Hadipurwanto Law Office",
+            "description": "This project is a modern and responsive redesign of the Hadipurwanto Law Office website. It focuses on delivering a professional look, smooth animations, and enhanced user experience across all devices."
+          },
+          "fourth": {
+            "name": "Birthday App",
+            "description": "This website is dedicated to my girlfriend's birthday."
+          },
+          "fifth": {
+            "name": "Pokédex App",
+            "description": "Pokédex App is an interactive web application that allows users to explore and discover various Pokémon with detailed information such as abilities, types, stats, and evolutions. Built with a responsive and modern interface, it provides a fun and seamless experience for Pokémon fans on any device."
+          }
+        }
+      }
+    },
+    "button": {
+      "project": "See Project"
+    }
+  },
+  "experience": {
+    "title": "My Experience",
+    "header": "A brief overview of my professional journey",
+    "button": {
+      "download": "Download CV"
+    }
+  },
+  "sc": {
+    "description": "gives you easy and short code tutorials that help you understand the basics of frontend development starting from HTML, CSS, to JavaScript. Whether you want to build your first website or understand how websites work, every short video breaks down complex concepts into simple steps that are easy to follow. Perfect for students, self-learners, or anyone who's curious about tech, this channel shows that learning to code doesn't have to be hard or boring. With just one line of code at a time, you'll slowly master how to create beautiful and responsive websites. Follow along and start your journey to becoming a frontend developer today one line at a time!"
+  },
+  "footer": {
+    "title": "Let's Connect!",
+    "description": "I'm always excited to collaborate and explore new ideas. Reach out via email or social platforms below!"
+  }
+}

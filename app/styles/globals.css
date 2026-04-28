@@ -8,6 +8,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-work-sans);
+  --font-jakarta: var(--font-jakarta-sans);
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -80,6 +81,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --grad-green: #C4F5E9B2;
+  --grad-purple: #F2D8FF; 
+  --grad-bg: white;
 }
 
 .dark {
@@ -114,6 +118,9 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --grad-green: #012A27;
+  --grad-purple: #390255;
+  --grad-bg: #0A0A0A;
 }
 
 @layer base {
@@ -125,5 +132,65 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+/* desktop (>1024px) */
+.hero-bg,
+.about-bg {
+  background:
+    radial-gradient(circle at left center, var(--grad-green) 0%, transparent 40%),
+    radial-gradient(circle at right, var(--grad-purple) 0%, transparent 40%),
+    var(--grad-bg);
+}
+
+/* tablet (800px – 1024px) */
+@media (min-width: 800px) and (max-width: 1024px) {
+  .hero-bg {
+    background:
+      radial-gradient(circle at top left, var(--grad-green) 0%, transparent 50%),
+      radial-gradient(circle at bottom right, var(--grad-purple) 0%, transparent 50%),
+      var(--grad-bg);
+  }
+
+  .about-bg {
+    background:
+      radial-gradient(circle at bottom left, var(--grad-green) 0%, transparent 50%),
+      radial-gradient(circle at top right, var(--grad-purple) 0%, transparent 50%),
+      var(--grad-bg);
+  }
+}
+
+/* mobile (≤768px) */
+@media (max-width: 768px) {
+  .hero-bg {
+    background:
+      radial-gradient(circle at top left, var(--grad-green) 0%, transparent 50%),
+      radial-gradient(circle at bottom right, var(--grad-purple) 0%, transparent 50%),
+      var(--grad-bg);
+  }
+
+  .about-bg {
+    background:
+      radial-gradient(circle at bottom left, var(--grad-green) 0%, transparent 50%),
+      radial-gradient(circle at top right, var(--grad-purple) 0%, transparent 50%),
+      var(--grad-bg);
+  }
+}
+
+/* mobile (≤480px) */
+@media (max-width: 480px) {
+  .hero-bg {
+    background:
+      radial-gradient(circle at bottom center, var(--grad-green) 0%, transparent 50%),
+      radial-gradient(circle at top center, var(--grad-purple) 0%, transparent 50%),
+      var(--grad-bg);
+  }
+
+  .about-bg {
+    background:
+      radial-gradient(circle at bottom center, var(--grad-purple) 0%, transparent 50%),
+      radial-gradient(circle at top center, var(--grad-green) 0%, transparent 50%),
+      var(--grad-bg);
   }
 }

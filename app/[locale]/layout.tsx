@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
-import "./styles/globals.css";
+import { Plus_Jakarta_Sans, Work_Sans } from "next/font/google";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import { ThemeProvider } from "next-themes";
+import "../styles/globals.css";
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
+  subsets: ["latin"],
+});
+
+const jakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-jakarta-sans",
   subsets: ["latin"],
 });
 
@@ -11,6 +20,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.radenmasabdul.my.id"),
   title: "Abdul Rahman Alhafizh",
   description: "Personal portfolio of Abdul Rahman Alhafizh — Frontend Developer specializing React.js, Next.js, Vue.js and modern web development.",
+  alternates: {
+    canonical: "/en",
+    languages: {
+      en: "/en",
+      id: "/id",
+      ja: "/ja",
+    },
+  },
   keywords: [
     "Abdul Rahman Alhafizh",
     "Abdul Rahman",
@@ -46,7 +63,7 @@ export const metadata: Metadata = {
         alt: "Abdul Rahman Alhafizh",
       },
     ],
-    locale: "id_ID",
+    locale: "en_EN",
     type: "website",
   },
   twitter: {
@@ -57,17 +74,33 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{locale: string}>;
+  messages: Promise<{default: Record<string, string>}>;
 }>) {
+  const {locale} = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
     <html
-      lang="id"
-      className={`${workSans.variable} h-full antialiased`}
+      lang={locale}
+      className={`${workSans.variable} ${jakartaSans.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <NextIntlClientProvider>
+            {children}
+          </NextIntlClientProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
