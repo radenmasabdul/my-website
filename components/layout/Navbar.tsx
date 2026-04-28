@@ -70,15 +70,20 @@ export default function Navbar() {
           <Image
             src={LogoBlack}
             alt="logo"
+            width={147}
+            height={72}
+            sizes="(max-width:768px) 110px, (max-width:1024px) 125px, 147px"
             className="h-7 md:h-8 lg:h-9 w-auto dark:hidden"
-            sizes="(max-width: 768px) 110px, (max-width: 1024px) 125px, 131px"
             priority
           />
+
           <Image
             src={LogoWhite}
             alt="logo"
+            width={147}
+            height={72}
+            sizes="(max-width:768px) 110px, (max-width:1024px) 125px, 147px"
             className="h-7 md:h-8 lg:h-9 w-auto hidden dark:block"
-            sizes="(max-width: 768px) 110px, (max-width: 1024px) 125px, 131px"
             priority
           />
         </div>
@@ -171,8 +176,8 @@ export default function Navbar() {
               }
               className="mt-3 w-full justify-center rounded-sm bg-purple-600 dark:bg-purple-600 text-white dark:text-black hover:opacity-80"
             >
-              <Phone size={15} />
-              <span className="font-jakarta font-bold text-sm ml-2">
+              <Phone size={15} className="text-white"/>
+              <span className="font-jakarta font-bold text-sm text-white ml-2">
                 {t("contact")}
               </span>
             </Button>
