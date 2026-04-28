@@ -80,7 +80,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
   params: Promise<{locale: string}>;
-  messages: Promise<{default: Record<string, string>}>;
 }>) {
   const {locale} = await params;
 
