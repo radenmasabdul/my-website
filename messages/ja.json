@@ -59,6 +59,10 @@
   "projects": {
     "title": "プロジェクト",
     "header": "これまで携わってきたプロジェクトを通して、私のスキルと経験をご紹介します。",
+    "tabs": {
+      "working": "職務経験",
+      "portfolio": "ポートフォリオ"
+    },
     "app": {
       "main": {
         "working": {
@@ -87,7 +91,7 @@
             "description": "Health Webプラットフォームの機能改善を担当しました。"
           }
         },
-        "portofolio": {
+        "portfolio": {
           "first": {
             "name": "Nexora App - 現代チーム向けスマート内部ダッシュボード",
             "description": "Nexora Appは、社内チーム向けに設計されたモダンでレスポンシブかつ直感的なフロントエンドダッシュボードです。洗練されたデザイン、リアルタイム操作、効率的なワークフローにより、組織の運営管理を支援します。"

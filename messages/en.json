@@ -59,6 +59,10 @@
   "projects": {
     "title": "My Project's",
     "header": "A collection of projects I've worked on, highlighting my skills and experience.",
+    "tabs": {
+      "working": "Work Experience",
+      "portfolio": "Portfolio"
+    },
     "app": {
       "main": {
         "working": {
@@ -87,7 +91,7 @@
             "description": "Enhancing the Health Web platform."
           }
         },
-        "portofolio": {
+        "portfolio": {
           "first": {
             "name": "Nexora App - Smart Internal Dashboard for Modern Teams",
             "description": "Nexora App is a modern, responsive, and intuitive frontend dashboard built to deliver a seamless user experience for internal teams. It focuses on clean design, real-time interaction, and efficient workflows to help organizations manage operations with speed and clarity."

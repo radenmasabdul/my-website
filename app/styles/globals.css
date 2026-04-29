@@ -137,6 +137,7 @@
 
 /* desktop (>1024px) */
 .hero-bg,
+.project-bg,
 .about-bg {
   background:
     radial-gradient(circle at left center, var(--grad-green) 0%, transparent 40%),
@@ -146,7 +147,8 @@
 
 /* tablet (800px – 1024px) */
 @media (min-width: 800px) and (max-width: 1024px) {
-  .hero-bg {
+  .hero-bg,
+  .project-bg {
     background:
       radial-gradient(circle at top left, var(--grad-green) 0%, transparent 50%),
       radial-gradient(circle at bottom right, var(--grad-purple) 0%, transparent 50%),
@@ -163,7 +165,8 @@
 
 /* mobile (≤768px) */
 @media (max-width: 768px) {
-  .hero-bg {
+  .hero-bg,
+  .project-bg {
     background:
       radial-gradient(circle at top left, var(--grad-green) 0%, transparent 50%),
       radial-gradient(circle at bottom right, var(--grad-purple) 0%, transparent 50%),
@@ -180,7 +183,8 @@
 
 /* mobile (≤480px) */
 @media (max-width: 480px) {
-  .hero-bg {
+  .hero-bg,
+  .project-bg {
     background:
       radial-gradient(circle at bottom center, var(--grad-green) 0%, transparent 50%),
       radial-gradient(circle at top center, var(--grad-purple) 0%, transparent 50%),
