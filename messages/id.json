@@ -59,6 +59,10 @@
   "projects": {
     "title": "Proyek Saya",
     "header": "Kumpulan proyek yang pernah saya kerjakan, menampilkan keahlian dan pengalaman saya.",
+    "tabs": {
+      "working": "Pengalaman Kerja",
+      "portfolio": "Portofolio"
+    },
     "app": {
       "main": {
         "working": {
@@ -87,7 +91,7 @@
             "description": "Meningkatkan platform web Health."
           }
         },
-        "portofolio": {
+        "portfolio": {
           "first": {
             "name": "Nexora App - Dashboard Internal Cerdas untuk Tim Modern",
             "description": "Nexora App adalah dashboard frontend modern, responsif, dan intuitif yang dirancang untuk memberikan pengalaman pengguna yang lancar bagi tim internal. Berfokus pada desain bersih, interaksi real-time, dan alur kerja efisien untuk membantu organisasi mengelola operasional dengan cepat dan jelas."
