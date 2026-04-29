@@ -4,6 +4,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import ProjectSection from "@/components/sections/ProjectSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import SebarisCodeSection from "@/components/sections/SebarisCodeSection";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   
@@ -31,6 +32,7 @@ export default function Home() {
           <SebarisCodeSection />
         </section>
       </main>
+      <Footer />
     </>
   );
 }

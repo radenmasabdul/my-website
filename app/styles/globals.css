@@ -140,7 +140,8 @@
 .project-bg,
 .about-bg,
 .experience-bg,
-.sc-bg {
+.sc-bg,
+.footer-bg {
   background:
     radial-gradient(circle at left center, var(--grad-green) 0%, transparent 40%),
     radial-gradient(circle at right, var(--grad-purple) 0%, transparent 40%),
@@ -159,7 +160,8 @@
   }
 
   .about-bg,
-  .experience-bg {
+  .experience-bg,
+  .footer-bg {
     background:
       radial-gradient(circle at bottom left, var(--grad-green) 0%, transparent 50%),
       radial-gradient(circle at top right, var(--grad-purple) 0%, transparent 50%),
@@ -179,7 +181,8 @@
   }
 
   .about-bg,
-  .experience-bg {
+  .experience-bg,
+  .footer-bg {
     background:
       radial-gradient(circle at bottom left, var(--grad-green) 0%, transparent 50%),
       radial-gradient(circle at top right, var(--grad-purple) 0%, transparent 50%),
@@ -199,7 +202,8 @@
   }
 
   .about-bg,
-  .experience-bg {
+  .experience-bg,
+  .footer-bg {
     background:
       radial-gradient(circle at bottom center, var(--grad-purple) 0%, transparent 50%),
       radial-gradient(circle at top center, var(--grad-green) 0%, transparent 50%),
@@ -292,6 +296,7 @@
   }
 
   .sc-account {
+    top: -4.5rem;
     left: 2.5rem;
     right: auto;
   }
