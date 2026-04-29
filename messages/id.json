@@ -122,6 +122,7 @@
   "experience": {
     "title": "Pengalaman Saya",
     "header": "Ringkasan singkat perjalanan profesional saya",
+    "years": "Tahun Pengalaman",
     "button": {
       "download": "Unduh CV"
     }

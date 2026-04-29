@@ -122,6 +122,7 @@
   "experience": {
     "title": "経験",
     "header": "これまでの職務経歴を簡単にご紹介します",
+    "years": "年の経験",
     "button": {
       "download": "履歴書をダウンロード"
     }

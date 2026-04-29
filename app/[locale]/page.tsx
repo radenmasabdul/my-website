@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ProjectSection from "@/components/sections/ProjectSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
 
 export default function Home() {
   
@@ -20,7 +21,11 @@ export default function Home() {
         <section id="project">
           <ProjectSection />
         </section>
+
+        <section id="experience">
+          <ExperienceSection />
+        </section>
       </main>
     </>
-  )
+  );
 }

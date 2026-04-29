@@ -122,6 +122,7 @@
   "experience": {
     "title": "My Experience",
     "header": "A brief overview of my professional journey",
+    "years": "Years Experience",
     "button": {
       "download": "Download CV"
     }
