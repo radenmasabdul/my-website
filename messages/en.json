@@ -22,10 +22,10 @@
   },
   "about": {
     "title": "About Me",
-    "header": "Short introduction about me and my skill",
+    "header": "Short introduction about me and my skill.",
     "description": {
       "paragraph-1": "I'm a Frontend Web Developer with 2+ years of experience building modern, responsive, and interactive web applications, with a strong focus on user interface development and performance optimization.",
-      "paragraph-2": "I specialize in developing scalable UI components, improving user experience, and ensuring smooth integration with backend systems",
+      "paragraph-2": "I specialize in developing scalable UI components, improving user experience, and ensuring smooth integration with backend systems.",
       "paragraph-3": "Throughout my career, I have worked with modern JavaScript technologies including React.js, Vue.js, Svelte.js, TypeScript, and Tailwind CSS, as well as collaborating closely with backend and QA teams.",
       "paragraph-4": "Previously, I worked on multiple projects in healthcare, insurance, and enterprise systems, where I contributed to building dashboards, improving system performance, and enhancing UI consistency for better usability.",
       "paragraph-5": "Outside of work, I enjoy exploring new technologies, building small projects, and continuously improving my skills to create better and more impactful digital experiences."
@@ -121,7 +121,7 @@
   },
   "experience": {
     "title": "My Experience",
-    "header": "A brief overview of my professional journey",
+    "header": "A brief overview of my professional journey.",
     "years": "Years Experience",
     "button": {
       "download": "Download CV"
