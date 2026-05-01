@@ -122,12 +122,13 @@
   "experience": {
     "title": "Pengalaman Saya",
     "header": "Ringkasan singkat perjalanan profesional saya",
+    "years": "Tahun Pengalaman",
     "button": {
       "download": "Unduh CV"
     }
   },
   "sc": {
-    "description": "memberikan tutorial coding singkat dan mudah dipahami yang membantu kamu mempelajari dasar-dasar frontend development mulai dari HTML, CSS, hingga JavaScript. Baik kamu ingin membuat website pertamamu atau memahami cara kerja website, setiap video singkat menjelaskan konsep rumit menjadi langkah sederhana yang mudah diikuti. Cocok untuk pelajar, pembelajar mandiri, atau siapa saja yang penasaran dengan dunia teknologi. Channel ini membuktikan bahwa belajar coding tidak harus sulit atau membosankan. Dengan satu baris kode setiap kali, kamu akan perlahan menguasai cara membuat website yang indah dan responsif. Ikuti sekarang dan mulai perjalananmu menjadi frontend developer, satu baris kode demi satu baris kode!"
+    "description": "Sebaris Kode memberikan tutorial coding singkat dan mudah dipahami yang membantu kamu memahami dasar-dasar frontend development mulai dari HTML, CSS, hingga JavaScript. Baik kamu ingin membuat website pertamamu atau memahami cara kerja website, setiap video singkat mengubah konsep yang rumit menjadi langkah-langkah sederhana yang mudah diikuti. Cocok untuk pelajar, pembelajar mandiri, atau siapa saja yang penasaran dengan dunia teknologi, channel ini menunjukkan bahwa belajar coding tidak harus sulit atau membosankan. Dengan satu baris kode setiap kali, kamu akan perlahan menguasai cara membuat website yang indah dan responsif. Ikuti sekarang dan mulai perjalananmu menjadi frontend developer hari ini, satu baris kode demi satu baris kode!"
   },
   "footer": {
     "title": "Mari Terhubung!",
