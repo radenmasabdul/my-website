@@ -22,7 +22,7 @@
   },
   "about": {
     "title": "Tentang Saya",
-    "header": "Perkenalan singkat tentang saya dan keahlian saya",
+    "header": "Perkenalan singkat tentang saya dan keahlian saya.",
     "description": {
       "paragraph-1": "Saya adalah Frontend Web Developer dengan pengalaman lebih dari 2 tahun dalam membangun aplikasi web modern, responsif, dan interaktif, dengan fokus kuat pada pengembangan antarmuka pengguna serta optimasi performa.",
       "paragraph-2": "Saya memiliki keahlian dalam mengembangkan komponen UI yang scalable, meningkatkan pengalaman pengguna, dan memastikan integrasi yang lancar dengan sistem backend.",
@@ -121,7 +121,7 @@
   },
   "experience": {
     "title": "Pengalaman Saya",
-    "header": "Ringkasan singkat perjalanan profesional saya",
+    "header": "Ringkasan singkat perjalanan profesional saya.",
     "years": "Tahun Pengalaman",
     "button": {
       "download": "Unduh CV"
