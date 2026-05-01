@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# ✨ Abdul Rahman Alhafizh — Personal Portfolio Website
 
-First, run the development server:
+</div>
 
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="50" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="50" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/radenmasabdul/logo/refs/heads/main/tailwindcss.svg" width="50" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" width="50" />
+</p>
+
+A modern and high-performance personal portfolio website built to showcase my work and experience as a Frontend Web Developer.
+
+## 🚀 Key Features
+
+- 🌍 Multi-language support (EN / ID / JA) using next-intl
+- ⚡ High performance with consistently excellent Lighthouse scores
+- 🌙 Dark & Light mode support
+- 📱 Fully responsive across all devices
+- ♿ Accessibility-first design (WCAG friendly)
+- 🧩 Scalable and maintainable component architecture
+- 🎯 Smooth scrolling navigation experience
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Library**: React 19
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: Radix UI
+- **Internationalization**: next-intl
+- **Theming**: next-themes
+- **Icons**: Lucide React
+- **Utilities**: clsx, tailwind-merge, class-variance-authority
+- **Code Quality**: ESLint
+
+## 📋 Prerequisites
+
+Before running Nexora App locally, make sure you have installed:
+
+- **Node.js** v18 or higher
+- **npm** or **yarn**
+- **Git**
+- **Modern Browser** (Chrome, Edge, Firefox)
+- **Nexora API** running for full backend integration
+
+## ⚡ Quick Start
+
+### 1. Clone Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/radenmasabdul/my-website.git
+cd my-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Start Development Server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application will run at http://localhost:3000/en
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+my-website/
+├── app/                        # App Router (Next.js)
+│   ├── [locale]/               # Internationalized routes
+│   │   └── layout.tsx          # Locale layout
+│   │   └── page.tsx            # Main page
+│   └── styles/                 # Global styles
+│   └── robots.ts               # Robots configuration
+│   └── sitemap.ts              # Sitemap generation
+├── components/                 # Reusable components
+│   └── features                # Feature-based components
+│   ├── layout/                 # Layout sections
+│   ├── section/                # Page sections (About, Project, etc.)
+│   └── ui/                     # Shared UI components (Button, Dropdown, etc.)
+├── i18n/                       # i18n configuration & navigation
+├── lib/                        # Utilities and helper functions
+├── messages/                   # Translation messages (EN / ID / JA)
+├── public/                     # Static assets
+│   ├── images/                 # Image assets
+│   ├── icons/                  # Icon assets
+│   └── files/                  # Downloadable files (CV, etc.)
+├── .gitignore                  # Ignored files for Git
+├── AGENTS.md                   # Project notes / agents config
+├── CLAUDE.md                   # AI assistant notes/config
+├── components.json             # UI components config
+├── eslint.config.mjs           # ESLint configuration
+├── next.config.ts              # Next.js configuration
+├── package-lock.json           # Dependency lock file
+├── package.json                # Dependencies & scripts
+├── postcss.config.mjs          # PostCSS configuration
+├── proxy.ts                    # Proxy configuration
+└── README.md                   # Project documentation
+├── tsconfig.json               # TypeScript configuration
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌍 Live Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[My Website](https://www.radenmasabdul.my.id/en)
 
-## Deploy on Vercel
+## 👨‍💻 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**radenmasabdul**
+- GitHub: [@radenmasabdul](https://github.com/radenmasabdul)
+# 
