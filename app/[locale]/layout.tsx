@@ -16,63 +16,79 @@ const jakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://www.radenmasabdul.my.id"),
-  title: "Abdul Rahman Alhafizh",
-  description: "Personal portfolio of Abdul Rahman Alhafizh — Frontend Developer specializing React.js, Next.js, Vue.js and modern web development.",
-  alternates: {
-    canonical: "/en",
-    languages: {
-      en: "/en",
-      id: "/id",
-      ja: "/ja",
-    },
-  },
-  keywords: [
-    "Abdul Rahman Alhafizh",
-    "Abdul Rahman",
-    "Raden Mas Abdul",
-    "Frontend Developer",
-    "React Developer",
-    "Next.js Developer",
-    "Vue.js Developer",
-    "Web Developer",
-    "Frontend Engineer",
-    "JavaScript Developer",
-    "React.js",
-    "Next.js",
-    "Vue.js",
-    "Portfolio",
-  ],
-  authors: [{ name: "Abdul Rahman Alhafizh" }],
-  creator: "Abdul Rahman Alhafizh",
-  publisher: "Abdul Rahman Alhafizh",
-  icons: {
-    icon: "/images/fav-icon.jpg",
-  },
-  openGraph: {
-    title: "Abdul Rahman Alhafizh",
-    description: "Personal portfolio of Abdul Rahman Alhafizh — Frontend Developer specializing in React.js, Next.js, Vue.js, and modern web development.",
-    url: "https://www.radenmasabdul.my.id/",
-    siteName: "Abdul Rahman Alhafizh",
-    images: [
-      {
-        url: "/images/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Abdul Rahman Alhafizh",
-      },
-    ],
-    locale: "en_EN",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Abdul Rahman Alhafizh",
-    description: "Personal portfolio of Abdul Rahman Alhafizh — Frontend Developer specializing React.js, Next.js, Vue.js and modern web development.",
-    images: ["/images/og-image.png"],
-  },
+const BASE_URL = "https://www.radenmasabdul.my.id";
+
+const localeMap: Record<string, string> = {
+  en: "en_US",
+  id: "id_ID",
+  ja: "ja_JP",
 };
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }>}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    metadataBase: new URL(BASE_URL),
+    title: "Abdul Rahman Alhafizh",
+    description:
+      "Personal portfolio of Abdul Rahman Alhafizh — Frontend Developer specializing React.js, Next.js, Vue.js and modern web development.",
+    keywords: [
+      "Abdul Rahman Alhafizh",
+      "Abdul Rahman",
+      "Raden Mas Abdul",
+      "Frontend Developer",
+      "React Developer",
+      "Next.js Developer",
+      "Vue.js Developer",
+      "Web Developer",
+      "Frontend Engineer",
+      "JavaScript Developer",
+      "React.js",
+      "Next.js",
+      "Vue.js",
+      "Portfolio",
+    ],
+    authors: [{ name: "Abdul Rahman Alhafizh" }],
+    creator: "Abdul Rahman Alhafizh",
+    publisher: "Abdul Rahman Alhafizh",
+    icons: {
+      icon: "/images/fav-icon.png",
+    },
+    alternates: {
+      canonical: `${BASE_URL}/${locale}`,
+      languages: {
+        en: `${BASE_URL}/en`,
+        id: `${BASE_URL}/id`,
+        ja: `${BASE_URL}/ja`,
+        "x-default": `${BASE_URL}/en`,
+      },
+    },
+    openGraph: {
+      title: "Abdul Rahman Alhafizh",
+      description:
+        "Personal portfolio of Abdul Rahman Alhafizh — Frontend Developer specializing in React.js, Next.js, Vue.js, and modern web development.",
+      url: `${BASE_URL}/${locale}`,
+      siteName: "Abdul Rahman Alhafizh",
+      images: [
+        {
+          url: "/images/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Abdul Rahman Alhafizh",
+        },
+      ],
+      locale: localeMap[locale] ?? "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Abdul Rahman Alhafizh",
+      description:
+        "Personal portfolio of Abdul Rahman Alhafizh — Frontend Developer specializing React.js, Next.js, Vue.js and modern web development.",
+      images: ["/images/og-image.png"],
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
