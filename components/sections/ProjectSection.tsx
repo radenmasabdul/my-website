@@ -82,7 +82,7 @@ const PORTFOLIO_META: Record<string, RawProject> = {
     image: birthdayImage,
     tags: ["React.js", "Typescript", "Tailwind CSS"],
     category: "Personal",
-    projectUrl: "https://hp-law.vercel.app/",
+    projectUrl: "https://birthday-beige-psi.vercel.app/",
   },
   fifth: {
     image: pokedexImage,
@@ -128,7 +128,7 @@ export default function ProjectSection() {
     true,
   );
 
-  const sectionClass = `project-bg px-6 py-16 md:px-16 lg:px-24`;
+  const sectionClass = `project-bg px-6 py-20 md:px-16 lg:px-24`;
   const headerClass = `flex flex-col justify-center items-center gap-2 mb-8 md:mb-12 text-black dark:text-white text-center`;
 
   return (

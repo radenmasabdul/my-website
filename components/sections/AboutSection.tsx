@@ -43,7 +43,7 @@ export default function AboutSection() {
     t("description.paragraph-5"),
   ];
 
-  const sectionClass = `about-bg px-6 py-16 md:px-16 lg:px-24`;
+  const sectionClass = `about-bg px-6 py-4 lg:py-20 md:px-16 lg:px-24`;
   const headerClass = `flex flex-col justify-center items-center gap-2 mb-6 md:mb-10 text-black dark:text-white text-center`;
   const contentClass = `grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 mx-auto`
   const cardClass = `w-full p-5 shadow-lg border-none rounded-xl order-2 lg:order-1 dark:bg-transparent`;

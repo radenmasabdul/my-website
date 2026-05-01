@@ -12,7 +12,7 @@ import iconTiktok from "@/public/icons/icon-tiktok.svg";
 
 export default function SebarisCodeSection() {
   const t = useTranslations("sc");
-  const sectionClass = `sc-bg px-6 py-16 md:px-16 lg:px-24`;
+  const sectionClass = `sc-bg px-6 py-20 md:px-16 lg:px-24`;
   const contentClass = `grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 mx-auto`;
   const leftContentClass = `relative flex justify-center lg:justify-start min-h-105 md:min-h-120 lg:min-h-130`;
 

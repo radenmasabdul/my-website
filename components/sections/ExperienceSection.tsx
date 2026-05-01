@@ -4,7 +4,7 @@ import sisiImage from "@/public/images/image-sisi.svg";
 import igloImage from "@/public/images/image-iglo.svg";
 import jsdImage from "@/public/images/image-jsd.svg";
 import zicareImage from "@/public/images/image-zi.svg";
-import Download from "../features/Download";
+import { ButtonDownload } from "../features/Button";
 
 export default function ExperienceSection() {
   const t = useTranslations("experience");
@@ -16,7 +16,7 @@ export default function ExperienceSection() {
     { src: zicareImage, alt: "Zi.Care" },
   ];
 
-  const sectionClass = `experience-bg px-6 py-16 md:px-16 lg:px-24`;
+  const sectionClass = `experience-bg px-6 py-20 md:px-16 lg:px-24`;
   const headerClass = `flex flex-col justify-center items-center gap-2 mb-6 md:mb-10 text-black dark:text-white text-center`;
   const expClass = `w-full mx-auto rounded-2xl md:rounded-3xl px-4 py-6 md:px-10 md:py-10 shadow-xl
     bg-[linear-gradient(135deg,#130428_0%,#251043_25%,#38126D_50%,#261045_75%,#190634_100%)]`;
@@ -63,7 +63,7 @@ export default function ExperienceSection() {
       </div>
 
       <div className="flex justify-center mt-8 md:mt-10">
-        <Download label={t("button.download")} />
+        <ButtonDownload label={t("button.download")} />
       </div>
     </section>
   );
