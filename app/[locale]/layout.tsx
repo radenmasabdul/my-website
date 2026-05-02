@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: "Abdul Rahman Alhafizh",
       images: [
         {
-          url: "/images/og-image.png",
+          url: "/images/og-image.jpg",
           width: 1200,
           height: 630,
           alt: "Abdul Rahman Alhafizh",
@@ -85,7 +85,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: "Abdul Rahman Alhafizh",
       description:
         "Personal portfolio of Abdul Rahman Alhafizh — Frontend Developer specializing React.js, Next.js, Vue.js and modern web development.",
-      images: ["/images/og-image.png"],
+      images: ["/images/og-image.jpg"],
     },
   };
 }

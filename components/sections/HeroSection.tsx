@@ -53,8 +53,8 @@ export default function HeroSection() {
   const headingClass = `space-y-1 font-sans font-semibold text-2xl md:text-3xl lg:text-5xl
     text-black dark:text-white leading-tight`;
 
-  const descClass = `space-y-1 text-sm md:text-base lg:text-xl font-jakarta font-medium
-    text-gray-700 dark:text-white`;
+  const descClass = ` text-sm md:text-base lg:text-xl font-jakarta font-medium
+    text-gray-700 dark:text-white text-justify`;
 
   return (
     <section className={sectionClass}>
@@ -66,13 +66,14 @@ export default function HeroSection() {
           </div>
 
           <div className={descClass}>
-            <p>{t("description.paragraph-1")}</p>
+            <p>{t("description")}</p>
+            {/* <p>{t("description.paragraph-1")}</p>
             <p>{t("description.paragraph-2")}</p>
-            <p>{t("description.paragraph-3")}</p>
+            <p>{t("description.paragraph-3")}</p> */}
           </div>
         </div>
 
-        <div className="flex flex-row gap-3 py-5 lg:py-10">         
+        <div className="flex flex-row gap-3 py-5 lg:py-10">
           <ButtonView label={t("button.view")} />
           <ButtonDownload label={t("button.download")} />
         </div>
@@ -97,7 +98,7 @@ export default function HeroSection() {
           iconSize={20}
         />
       </div>
-      
+
       <ButtonScrollDown />
     </section>
   );
